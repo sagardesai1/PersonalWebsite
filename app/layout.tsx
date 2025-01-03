@@ -16,7 +16,42 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Sagar Desai",
-  description: "Sagar Desai's personal website",
+  description: "Sagar Desai's personal website - CTO of SKUhunt",
+  keywords: [
+    "Sagar Desai",
+    "Software Engineer",
+    "Software Developer",
+    "CTO of SKUhunt",
+    "Portfolio",
+  ],
+  authors: [{ name: "Sagar Desai" }],
+  creator: "Sagar Desai",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.sagardesai.dev/",
+    title: "Sagar Desai",
+    description: "CTO of SKUhunt, Software Engineer and Developer",
+    siteName: "Sagar Desai",
+    images: [
+      {
+        url: "/og-image.png", // Add your OG image path here
+        width: 1200,
+        height: 630,
+        alt: "Sagar Desai",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sagar Desai",
+    description: "CTO of SKUhunt, Software Engineer and Developer",
+    images: ["/og-image.png"], // Same image as OG
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
